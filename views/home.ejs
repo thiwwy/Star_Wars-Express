@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include partials/head.ejs %>
+</head>
+  <body>
+      <% include partials/header.ejs %>
+
+    <div id= "hero-image">
+      <h1 id="hero-title"> <%= title %> </h1>
+    </div>
+    <div id="poster-wrapper" class="content-padding clearfix">
+       <% for(var i=0; i< movies.length; i++){ %>
+         <div class="poster">
+           <a href="/star_wars_episode/<%= movies[i].episode_number %>" class="episode_link">
+            <img src="/img/<%= movies[i].poster %>" class="img-responsive"/>
+            <div class="poster-info-overlay">
+            <h3><%= movies[i].title%></h3>
+            <h4>View more <i class="fa fa-arrow-right"></i><h4>
+            </div>
+          </a>
+         </div>
+        <% } %>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <% include partials/footer.ejs %>
+    <% include partials/script.ejs %>
+  </body>
+</html>

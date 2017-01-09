@@ -1,0 +1,23 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "A basic app for Star Wars movies",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sample"
+  },
+  "keywords": [
+    "express",
+    "nodejs"
+  ],
+  "author": "Silvia D'Auria",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
+}
